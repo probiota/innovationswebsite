@@ -1,0 +1,28 @@
+.hero {
+  position: relative;
+  padding: 8rem 0;
+  background-color: hsl(var(--primary));
+  color: white;
+  overflow: hidden;
+}
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+.hero h1 { font-size: 3.5rem; color: white; margin-bottom: 1.5rem; }
+.hero p { font-size: 1.25rem; color: hsl(var(--secondary)); margin-bottom: 2rem; max-width: 600px; }
+.heroBg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .hero { padding: 5rem 0; text-align: center; }
+  .hero h1 { font-size: 2.5rem; }
+  .hero p { margin-left: auto; margin-right: auto; }
+}
