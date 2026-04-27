@@ -91,7 +91,7 @@ export default function HomePage() {
               <ul style={{ listStyle: 'none', padding: 0, marginTop: '2rem', marginBottom: '2.5rem' }}>
                 {proofPoints.map((point) => (
                   <li key={point} style={{ marginBottom: '0.75rem', display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
-                    <span style={{ color: 'hsl(var(--accent))', fontSize: '1.1rem', flexShrink: 0 }}>●</span>
+                    <span style={{ color: 'var(--color-accent)', fontSize: '1.1rem', flexShrink: 0 }}>●</span>
                     <span style={{ fontWeight: 500 }}>{point}</span>
                   </li>
                 ))}
@@ -102,7 +102,7 @@ export default function HomePage() {
                 {processSteps.map((step) => (
                   <li key={step.num} style={{ marginBottom: '1.5rem', display: 'flex', gap: '1.25rem' }}>
                     <div style={{
-                      background: 'hsl(var(--primary))', color: 'white', borderRadius: '50%',
+                      background: 'var(--color-accent)', color: 'var(--color-text)', borderRadius: '50%',
                       width: 40, height: 40, display: 'flex', alignItems: 'center', justifyContent: 'center',
                       flexShrink: 0, fontWeight: 600, fontSize: '1.1rem'
                     }}>{step.num}</div>
@@ -130,11 +130,11 @@ export default function HomePage() {
           <div className="grid grid-cols-2 items-start gap-8">
             {/* Premium Ingredients */}
             <div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'hsl(var(--primary))' }}>Premium Ingredients</h3>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--color-primary)' }}>Premium Ingredients</h3>
               <div style={{ display: 'grid', gap: '0.75rem' }}>
                 {premiumIngredients.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="hsl(var(--accent))" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                       <polyline points="22 4 12 14.01 9 11.01" />
                     </svg>
@@ -146,17 +146,17 @@ export default function HomePage() {
 
             {/* Designed Your Way */}
             <div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'hsl(var(--primary))' }}>Designed Your Way</h3>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--color-primary)' }}>Designed Your Way</h3>
               <div style={{ display: 'grid', gap: '1rem' }}>
                 {designedYourWay.map((item) => (
                   <div key={item.title} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="hsl(var(--accent))" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: '3px' }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: '3px' }}>
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                       <polyline points="22 4 12 14.01 9 11.01" />
                     </svg>
                     <div>
                       <strong style={{ fontSize: '1.05rem' }}>{item.title}</strong>
-                      <p style={{ fontSize: '0.95rem', margin: '0.25rem 0 0', color: 'hsl(var(--muted-foreground))' }}>{item.desc}</p>
+                      <p style={{ fontSize: '0.95rem', margin: '0.25rem 0 0', color: 'var(--color-text-muted)' }}>{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -172,14 +172,14 @@ export default function HomePage() {
           <h2 style={{ color: 'white', fontSize: '2.25rem', marginBottom: '1.5rem', maxWidth: '800px', margin: '0 auto 1.5rem' }}>
             Globally Patented Manufacturing for Next-Gen Wellness Brands
           </h2>
-          <p style={{ color: 'hsl(var(--secondary))', opacity: 0.9, fontSize: '1.15rem', maxWidth: '850px', margin: '0 auto', lineHeight: 1.7 }}>
+          <p style={{ color: 'var(--color-surface-alt)', opacity: 0.9, fontSize: '1.15rem', maxWidth: '850px', margin: '0 auto', lineHeight: 1.7 }}>
             Our patented technologies across Canada, the UK, and key European markets enable us to deliver advanced, high-performance formulations at scale. We help brands accelerate product development, ensure consistent quality, and differentiate in competitive markets with proven, globally recognized manufacturing capabilities.
           </p>
         </div>
       </section>
 
       {/* Certifications Strip */}
-      <section className="section" style={{ padding: '4rem 0', borderBottom: '1px solid hsl(var(--border))' }}>
+      <section className="section" style={{ padding: '4rem 0', borderBottom: '1px solid var(--color-border)' }}>
         <div className="container text-center">
           <div className="flex justify-center items-center gap-6" style={{ flexWrap: 'wrap' }}>
             {certLogos.map((logo) => (
@@ -194,7 +194,7 @@ export default function HomePage() {
         subtitle="Partner with Probiota Innovations for reliable, scalable, and high-quality supplement manufacturing."
         buttonText="Request a Free Quote"
         buttonHref="/contact"
-        variant="dark"
+        variant="light"
       />
     </>
   );

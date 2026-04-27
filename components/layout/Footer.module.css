@@ -1,21 +1,21 @@
 .footer {
-  background-color: hsl(var(--primary));
+  background-color: var(--color-primary);
   color: white;
   padding: 4rem 0 2rem;
 }
 .footerLogo { max-height: 48px; margin-bottom: 1.5rem; filter: brightness(0) invert(1); }
-.footerDesc { max-width: 350px; font-size: 0.95rem; color: hsl(var(--muted)); }
+.footerDesc { max-width: 350px; font-size: 0.95rem; color: var(--color-surface-muted); }
 .footerHeading { color: white; margin-bottom: 1.5rem; }
 .footerList { list-style: none; padding: 0; }
 .footerList li { margin-bottom: 0.75rem; }
-.footerList a { color: hsl(var(--muted)); }
+.footerList a { color: var(--color-surface-muted); }
 .footerList a:hover { color: white; }
 .footerBottom {
   margin-top: 4rem; padding-top: 2rem;
   border-top: 1px solid rgba(255,255,255,0.1);
   text-align: center;
 }
-.footerBottom p { font-size: 0.875rem; color: hsl(var(--muted)); }
+.footerBottom p { font-size: 0.875rem; color: var(--color-surface-muted); }
 
 .socialIcon {
   display: flex;
@@ -29,6 +29,6 @@
   transition: background 0.2s ease;
 }
 .socialIcon:hover {
-  background: hsl(var(--accent));
+  background: var(--color-accent);
 }
 

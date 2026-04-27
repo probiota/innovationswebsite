@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   padding: 8rem 0;
-  background-color: hsl(var(--primary));
+  background-color: var(--color-primary);
   color: white;
   overflow: hidden;
 }
@@ -11,7 +11,7 @@
   max-width: 800px;
 }
 .hero h1 { font-size: 3.5rem; color: white; margin-bottom: 1.5rem; }
-.hero p { font-size: 1.25rem; color: hsl(var(--secondary)); margin-bottom: 2rem; max-width: 600px; }
+.hero p { font-size: 1.25rem; color: var(--color-secondary); margin-bottom: 2rem; max-width: 600px; }
 .heroBg {
   position: absolute;
   top: 0; left: 0;
