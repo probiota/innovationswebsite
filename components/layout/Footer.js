@@ -81,7 +81,7 @@ export default function Footer() {
           <ul className={styles.footerList}>
             <li>
               <span style={{ fontSize: '0.8rem', opacity: 0.7, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Call Us:</span><br />
-              <a href="tel:+919990333731">+91 999 0333 731</a>
+              <a href="tel:+918368490741">+91 836 8490 741</a>
             </li>
             <li>
               <span style={{ fontSize: '0.8rem', opacity: 0.7, textTransform: 'uppercase', letterSpacing: '0.05em' }}>General Inquiries</span><br />

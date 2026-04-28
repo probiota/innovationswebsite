@@ -46,7 +46,7 @@ export default function PrivacyPage() {
             <p style={{ background: 'var(--color-light)', padding: '1.5rem', borderRadius: 'var(--radius)', border: '1px solid var(--color-border)' }}>
               <strong style={{ fontSize: '1.1rem', display: 'block', marginBottom: '0.5rem', color: 'var(--color-primary)' }}>Probiota Innovations</strong>
               Email: <a href="mailto:info@probiotainnovations.com" style={{ color: 'var(--color-accent)' }}>info@probiotainnovations.com</a><br />
-              Phone: <a href="tel:+919990333731" style={{ color: 'var(--color-accent)' }}>+91 999 0333 731</a>
+              Phone: <a href="tel:+918368490741" style={{ color: 'var(--color-accent)' }}>+91 836 8490 741</a>
             </p>
           </div>
         </div>

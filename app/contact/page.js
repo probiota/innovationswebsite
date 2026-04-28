@@ -20,7 +20,7 @@ export default function ContactPage() {
 
             <div className="contact-info-block">
               <h3>Phone</h3>
-              <p><a href="tel:+919990333731">+91 999 0333 731</a></p>
+              <p><a href="tel:+918368490741">+91 836 8490 741</a></p>
             </div>
 
             <div className="contact-info-block">
