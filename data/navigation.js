@@ -7,9 +7,9 @@ export const navLinks = [
 
 export const footerCapabilities = [
   { label: 'Contract Manufacturing', href: '/capabilities' },
-  { label: 'Private Label', href: '/capabilities' },
-  { label: 'Pectin Gummies', href: '/capabilities' },
-  { label: 'R&D Formulation', href: '/capabilities' },
+  { label: 'Private Label', href: '/contact' },
+  { label: 'Pectin Gummies', href: '/contact' },
+  { label: 'R&D Formulation', href: '/contact' },
 ];
 
 export const footerCompany = [

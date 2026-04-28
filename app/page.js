@@ -39,12 +39,9 @@ const designedYourWay = [
 ];
 
 const certLogos = [
+  { src: '/certifications/FDA-1.svg', alt: 'US FDA' },
+  { src: '/certifications/GMP.svg', alt: 'WHO-GMP' },
   { src: '/certifications/FSSAI.svg', alt: 'FSSAI' },
-  { src: '/certifications/Lab-Tested.svg', alt: 'Lab Tested' },
-  { src: '/certifications/Make-In-India.svg', alt: 'Make in India' },
-  { src: '/certifications/ISO-22000.svg', alt: 'ISO 22000' },
-  { src: '/certifications/FDA-1.svg', alt: 'FDA Approved' },
-  { src: '/certifications/GMP.svg', alt: 'GMP Certified' },
 ];
 
 export default function HomePage() {

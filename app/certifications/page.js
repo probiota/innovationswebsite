@@ -4,12 +4,8 @@ export const metadata = { title: 'Certifications' };
 
 const certifications = [
   { logo: '/certifications/FDA-1.svg', title: 'US FDA', sub: 'Registered Facility' },
-  { logo: '/certifications/GMP.svg', title: 'EU GMP', sub: 'Good Manufacturing Practice' },
   { logo: '/certifications/GMP.svg', title: 'WHO-GMP', sub: 'World Health Organization' },
-  { logo: '/certifications/Lab-Tested.svg', title: 'Health Canada', sub: 'Compliance' },
   { logo: '/certifications/FSSAI.svg', title: 'FSSAI', sub: 'Food Safety' },
-  { logo: '/certifications/ISO-22000.svg', title: 'ISO 9001', sub: 'Quality Management' },
-  { logo: '/certifications/Lab-Tested.svg', title: 'HACCP', sub: 'Hazard Analysis' },
 ];
 
 export default function CertificationsPage() {
