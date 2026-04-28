@@ -336,4 +336,16 @@ img { max-width: 100%; height: auto; display: block; }
   .radial-right-1, .radial-right-2, .radial-right-3 {
     grid-column: 1/-1; grid-row: auto; transform: none;
   }
+  .radial-card { text-align: left !important; }
+}
+
+@media (max-width: 768px) {
+  .radial-layout { gap: 1rem; padding: 1rem 0; overflow: hidden; }
+  .globe-center { max-height: 300px; overflow: hidden; touch-action: pan-y; pointer-events: none; }
+  .radial-card { padding: 1.25rem; }
+  .radial-card h3 { font-size: 1.1rem; }
+  .radial-card p { font-size: 0.9rem; }
+  .page-header h1 { font-size: 2rem; }
+  .page-header p { font-size: 1rem; }
+  .page-header { padding: 4rem 0 3rem; }
 }

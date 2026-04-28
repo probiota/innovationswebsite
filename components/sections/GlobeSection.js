@@ -127,6 +127,11 @@ export default function GlobeSection() {
       controls.minPolarAngle = Math.PI / 3.5;
       controls.maxPolarAngle = Math.PI - Math.PI / 3;
 
+      // Disable touch rotation on mobile so users can scroll
+      if (window.innerWidth <= 768) {
+        controls.enableRotate = false;
+      }
+
       world.pointOfView({ lat: 20, lng: 78, altitude: 2.5 }, 0);
 
       // Block wheel events from reaching the 3D renderer
@@ -159,7 +164,7 @@ export default function GlobeSection() {
   return (
     <div className="radial-layout">
       <div className="globe-center">
-        <div ref={containerRef} style={{ width: '100%', height: 500, overflow: 'hidden', background: 'transparent' }} />
+        <div ref={containerRef} style={{ width: '100%', height: 500, overflow: 'hidden', background: 'transparent', touchAction: 'pan-y' }} />
       </div>
       {radialCards.map((card) => (
         <div
