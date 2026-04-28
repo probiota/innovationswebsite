@@ -29,14 +29,11 @@ export default function ContactForm() {
   return (
     <div className="contact-form-container">
       <h2>Request a Quote / Demo</h2>
-      <form 
-        name="contact" 
-        method="POST" 
-        data-netlify="true" 
-        action="/thank-you"
-      >
-        {/* Hidden input for Netlify forms */}
-        <input type="hidden" name="form-name" value="contact" />
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="4db9a486-e246-48bc-b775-65b9c061ea4c" />
+        <input type="hidden" name="subject" value="New Lead: Probiota Innovations Website" />
+        <input type="hidden" name="from_name" value="Probiota Website" />
+        <input type="hidden" name="redirect" value="https://probiotainnovations.com/thank-you" />
 
         <div className="form-row">
           <div className="form-group">
