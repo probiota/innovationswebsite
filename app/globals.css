@@ -48,9 +48,10 @@ html {
   color: var(--color-text);
   background-color: var(--color-bg);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-body { margin: 0; -webkit-font-smoothing: antialiased; }
+body { margin: 0; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
