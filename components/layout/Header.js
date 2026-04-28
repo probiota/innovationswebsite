@@ -1,11 +1,27 @@
 'use client';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { navLinks } from '@/data/navigation';
 import styles from './Header.module.css';
 
 export default function Header() {
   const pathname = usePathname();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Close menu when route changes
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
+
+  // Prevent scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isMenuOpen]);
 
   return (
     <header className={styles.header}>
@@ -15,7 +31,7 @@ export default function Header() {
             fontSize: '2rem', 
             fontWeight: '700', 
             letterSpacing: '0.05em', 
-            fontFamily: 'serif', 
+            fontFamily: "'Playfair Display', serif", 
             color: 'var(--color-primary)',
             lineHeight: 1
           }}>
@@ -25,13 +41,24 @@ export default function Header() {
             fontSize: '0.65rem', 
             letterSpacing: '0.3em', 
             fontWeight: '600', 
+            fontFamily: "'Montserrat', sans-serif",
             color: 'var(--color-text-muted)',
             textTransform: 'uppercase'
           }}>
             Your Wellness, Our Commitment
           </span>
         </Link>
-        <nav className={styles.nav}>
+        {/* Mobile Toggle */}
+        <button 
+          className={styles.menuToggle} 
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <div className={`${styles.hamburger} ${isMenuOpen ? styles.open : ''}`}></div>
+        </button>
+
+        {/* Desktop & Mobile Nav */}
+        <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -41,7 +68,7 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <Link href="/contact" className="btn btn-primary">Request a Quote</Link>
+          <Link href="/contact" className={`btn btn-primary ${styles.ctaButton}`}>Request a Quote</Link>
         </nav>
       </div>
     </header>

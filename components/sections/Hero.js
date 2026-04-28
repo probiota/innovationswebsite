@@ -7,11 +7,17 @@ export default function Hero() {
       <img src="/images/hero_bg.png" alt="Modern Lab" className={styles.heroBg} />
       <div className="container">
         <div className={styles.heroContent}>
-          <h1>Private Label Gummy &amp; Supplement Manufacturer</h1>
-          <p>Launch Your Supplement Brand in 40 Days. We help brands launch efficiently with a fully integrated manufacturing ecosystem built to reduce timelines and optimize costs.</p>
-          <div className="flex gap-4" style={{ flexWrap: 'wrap' }}>
-            <Link href="/contact" className="btn btn-primary btn-lg">Request a quote</Link>
-            <Link href="/capabilities" className="btn btn-secondary btn-lg">Explore Capabilities</Link>
+          <p className="tagline" style={{ color: 'var(--color-accent)', marginBottom: '1.5rem' }}>Your Wellness, Our Commitment</p>
+          <h1 className={styles.title}>
+            We build your brand.<br /> 
+            <span style={{ color: 'var(--color-accent)' }}>With science no one else can replicate.</span>
+          </h1>
+          <p className={styles.description}>
+            Probiota Innovations is India's only scientist-led gummy nutraceutical manufacturer with access to patented technology and two decades of global R&D expertise.
+          </p>
+          <div className="flex gap-4" style={{ flexWrap: 'wrap', marginTop: '1rem' }}>
+            <Link href="/contact" className="btn btn-primary btn-lg">Request a Quote</Link>
+            <Link href="/capabilities" className="btn btn-outline btn-lg" style={{ color: 'white', borderColor: 'rgba(255,255,255,0.3)' }}>Explore Capabilities</Link>
           </div>
         </div>
       </div>
