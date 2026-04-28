@@ -20,7 +20,27 @@ export default function Footer() {
       <div className="container grid grid-cols-4 gap-8">
         {/* Col 1: Brand + Socials */}
         <div>
-          <img src="/images/probiota-logo.png" alt="Probiota" className={styles.footerLogo} />
+          <div style={{ marginBottom: '1.5rem', display: 'flex', flexDirection: 'column', gap: '2px' }}>
+            <span style={{ 
+              fontSize: '1.75rem', 
+              fontWeight: '700', 
+              letterSpacing: '0.05em', 
+              fontFamily: 'serif', 
+              color: 'white',
+              lineHeight: 1
+            }}>
+              PROBI<span style={{ color: 'var(--color-accent)' }}>O</span>TA
+            </span>
+            <span style={{ 
+              fontSize: '0.6rem', 
+              letterSpacing: '0.25em', 
+              fontWeight: '600', 
+              color: 'rgba(255,255,255,0.6)',
+              textTransform: 'uppercase'
+            }}>
+              Your Wellness, Our Commitment
+            </span>
+          </div>
           <p className={styles.footerDesc}>Your trusted manufacturing partner for private label and contract manufacturing of premium supplements and pectin gummy products.</p>
           <h4 className={styles.footerHeading} style={{ marginTop: '1.5rem' }}>Connect With Us</h4>
           <div style={{ display: 'flex', gap: '0.75rem' }}>
