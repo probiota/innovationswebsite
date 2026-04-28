@@ -29,7 +29,15 @@ export default function ContactForm() {
   return (
     <div className="contact-form-container">
       <h2>Request a Quote / Demo</h2>
-      <form onSubmit={handleSubmit}>
+      <form 
+        name="contact" 
+        method="POST" 
+        data-netlify="true" 
+        action="/thank-you"
+      >
+        {/* Hidden input for Netlify forms */}
+        <input type="hidden" name="form-name" value="contact" />
+
         <div className="form-row">
           <div className="form-group">
             <label htmlFor="first_name" className="form-label">First Name *</label>
@@ -76,9 +84,8 @@ export default function ContactForm() {
           type="submit"
           className="btn btn-primary btn-lg"
           style={{ width: '100%' }}
-          disabled={submitting}
         >
-          {submitting ? 'Submitting...' : 'Submit Request'}
+          Submit Request
         </button>
       </form>
     </div>
