@@ -111,8 +111,19 @@ export default function HomePage() {
                 ))}
               </ul>
             </div>
-            <div>
-              <img src="/images/private-label-manufacturing.jpg" alt="Automated Production Line" style={{ borderRadius: 'var(--radius)', boxShadow: 'var(--shadow-xl)', width: '100%' }} />
+            <div style={{ height: '100%' }}>
+              <img 
+                src="/images/product-bottle-showcase.png" 
+                alt="Premium Private Label Supplement Packaging" 
+                style={{ 
+                  borderRadius: 'var(--radius)', 
+                  boxShadow: 'var(--shadow-xl)', 
+                  width: '100%', 
+                  height: '100%', 
+                  objectFit: 'cover',
+                  aspectRatio: '4/5'
+                }} 
+              />
             </div>
           </div>
         </div>
